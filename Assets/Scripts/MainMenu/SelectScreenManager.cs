@@ -140,7 +140,7 @@ public class SelectScreenManager : MonoBehaviour {
         }
 
         if(Input.GetButtonUp("Fire1" + playerId)) {
-            pl.createdCharacter.GetComponent<Animator>().Play("Kick");
+            //pl.createdCharacter.GetComponent<Animator>().Play("Kick");
             pl.playerBase.playerPrefab = charMnager.returnCharacterWithID(pl.activePotrait.characterId).prefab;
             pl.playerBase.hasCharacter = true;
         }

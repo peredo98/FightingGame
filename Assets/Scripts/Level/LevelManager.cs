@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -19,8 +20,8 @@ public class LevelManager : MonoBehaviour {
     int currentTimer;
     float internalTimer;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         charM = CharacterManager.GetInstance();
         levelUI = LevelUI.GetInstance();
 
@@ -30,16 +31,45 @@ public class LevelManager : MonoBehaviour {
         levelUI.AnnouncerTextLine2.gameObject.SetActive(false);
 
         StartCoroutine("StartGame");
-	}
+    }
 
     void FixedUpdate()
     {
-        //States
+        /*
+        if (charM.players[0].playerStates.transfirm.position.x < charM.players[1].playerStates.transfiorm.position.x) {
+            charM.players[0].playerStates.lookRight = true;
+            charM.players[1].playerStates.lookRight = false;
+        }
+        else {
+            charM.players[0].playerStates.lookRight = false;
+            charM.players[1].playerStates.lookRight = true;
+        }*/
     }
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
+        if (countdown) {
+            HandleTurnTimer();
+
+        }
+    }
+
+    void HandleTurnTimer() {
+        levelUI.LevelTimer.text = currentTimer.ToString();
+
+        internalTimer += Time.deltaTime;
+
+        if (internalTimer > 1) {
+            currentTimer--;
+            internalTimer = 0;
+        }
+        if (currentTimer <= 0) {
+            EndTurnFunction(true);
+            countdown = false;
+        }
+    }
+
+
 
     IEnumerator StartGame() {
         yield return CreatePlayers();
@@ -56,7 +86,7 @@ public class LevelManager : MonoBehaviour {
 
         yield return InitPlayers();
 
-        yield return EnableControl(); 
+        yield return EnableControl();
     }
 
     IEnumerator CreatePlayers()
@@ -71,13 +101,13 @@ public class LevelManager : MonoBehaviour {
 
         }
         yield return null;
-    } 
+    }
 
-    IEnumerator InitPlayers() { 
-        for(int i = 0; i < charM.players.Count; i++) {
-            //charM.players[i].playerStates
-            //charM.players[i].playerStates
-            //charM.players[i].playerStates
+    IEnumerator InitPlayers() {
+        for (int i = 0; i < charM.players.Count; i++) {
+            //charM.players[i].playerStates.health = 100;
+            //charM.players[i].playerStates.anim.Play("Locomotion");
+            //charM.players[i].playerStates.position = spawnPositions[i].position;
         }
         yield return null;
     }
@@ -107,8 +137,10 @@ public class LevelManager : MonoBehaviour {
         levelUI.AnnouncerTextLine1.color = Color.red;
 
         for (int i = 0; i < charM.players.Count; i++) {
-            if(charM.players[i].playerType == PlayerBase.PlayerType.user) { 
-                //Input Handler
+            if (charM.players[i].playerType == PlayerBase.PlayerType.user) {
+                //InputHandler ih = charM.players[i].playerStates.gameObject.GetComponent<InputHandler>();    
+                //ih.playerInput = charM.players[i[.inputId;
+                //ih.enabled = true
             }
         }
 
@@ -116,5 +148,117 @@ public class LevelManager : MonoBehaviour {
         levelUI.AnnouncerTextLine1.gameObject.SetActive(false);
         countdown = true;
 
+    }
+
+    void DisableControl()
+    {
+        for (int i = 0; i < charM.players.Count; i++)
+        {
+            //charM.players[i].playerStates.ResetStateInputs();
+
+            if (charM.players[i].playerType == PlayerBase.PlayerType.user)
+            {
+                //charM.players[i].playerStates.GetComponent<InputHandler>().enable = false;
+            }
+        }
+    }
+
+    public void EndTurnFunction(bool timeOut = false) {
+        countdown = false;
+
+        levelUI.LevelTimer.text = maxTurnTimer.ToString();
+
+        if (timeOut) {
+            levelUI.AnnouncerTextLine1.gameObject.SetActive(true);
+            levelUI.AnnouncerTextLine1.text = "Time Out!";
+            levelUI.AnnouncerTextLine1.color = Color.cyan;
+        }
+        else {
+            levelUI.AnnouncerTextLine1.gameObject.SetActive(true);
+            levelUI.AnnouncerTextLine1.text = "K.O.";
+            levelUI.AnnouncerTextLine1.color = Color.red;
+        }
+        DisableControl();
+
+        StartCoroutine("EndTurn");
+    }
+
+    IEnumerator EndTurn() {
+        yield return oneSec;
+        yield return oneSec;
+        yield return oneSec;
+
+        PlayerBase vPlayer = FindWinningPlayer();
+
+        if (vPlayer == null) {
+            levelUI.AnnouncerTextLine1.text = "Draw";
+            levelUI.AnnouncerTextLine1.color = Color.blue;
+        }
+        else {
+            levelUI.AnnouncerTextLine1.text = vPlayer.playerId + " Wins!";
+            levelUI.AnnouncerTextLine1.color = Color.red;
+        }
+
+        yield return oneSec;
+        yield return oneSec;
+        yield return oneSec;
+
+        if (vPlayer != null)
+        {
+            /*if (vPlayer.playerStates == 100) {
+                levelUI.AnnouncerTextLine2.gameObject.SetActive(true);
+                levelUI.AnnouncerTextLine2.text = "Flawless Victoy!";
+            }*/
+        }
+
+        yield return oneSec;
+        yield return oneSec;
+        yield return oneSec;
+
+        currentTurn++;
+
+        bool matchOver = isMatchOver();
+        if (!matchOver) {
+            StartCoroutine("InitTurn");
+        }
+        else {
+            for (int i = 0; i < charM.players.Count; i++) {
+                charM.players[i].score = 0;
+                charM.players[i].hasCharacter = false;
+            }
+            SceneManager.LoadSceneAsync("select");
+        }
+    }
+
+    bool isMatchOver(){
+        bool retVal = false;
+
+        for (int i = 0; i < charM.players.Count; i++)
+        {
+            if(charM.players[i].score >= maxturns) {
+                retVal = true;
+                break; 
+            }
+        }
+        return retVal;
+    }
+
+    PlayerBase FindWinningPlayer() {
+        PlayerBase retVal = null;
+
+        //StateManager targerPlayer = null;
+        /*
+        if(charM.players[0].playerStates.health < charM.players[1].playerStates.health) {
+            charM.players[1].score++;
+            targetPlayer = charM.players[1].playerStates;
+            levelUI.AddWinIndicator(1);
+        }else{
+            charM.players[0].score++;
+            targetPlayer = charM.players[0].playerStates;
+            levelUI.AddWinIndicator(0);
+        }
+         retVal = charM.returnPLayerFromStates(targetPlayer);
+        */
+        return retVal;
     }
 }

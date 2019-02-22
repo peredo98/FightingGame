@@ -69,6 +69,14 @@
     <Compile Include="Assets\Scripts\MainMenu\PotraitInfo.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SelectScreenManager.cs" />
     <Compile Include="Assets\Scripts\Players\ChangeBool.cs" />
+    <Compile Include="Assets\Scripts\Players\DoDamage.cs" />
+    <Compile Include="Assets\Scripts\Players\HandleAnimations.cs" />
+    <Compile Include="Assets\Scripts\Players\HandleDamageColliders.cs" />
+    <Compile Include="Assets\Scripts\Players\HandleMovement.cs" />
+    <Compile Include="Assets\Scripts\Players\HandleMovementCollider_ASB.cs" />
+    <Compile Include="Assets\Scripts\Players\InputHandler.cs" />
+    <Compile Include="Assets\Scripts\Players\OpenDamageCollider.cs" />
+    <Compile Include="Assets\Scripts\Players\StateManager.cs" />
     <Compile Include="Assets\Scripts\Utilities\FollowTransform.cs" />
     <Compile Include="Assets\Scripts\Utilities\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\Utilities\Perlin.cs" />

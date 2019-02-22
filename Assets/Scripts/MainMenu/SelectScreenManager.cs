@@ -188,7 +188,7 @@ public class SelectScreenManager : MonoBehaviour {
             pl.previewPotrait = pl.activePotrait;
 
             if (!string.Equals(pl.playerBase.playerId, charMnager.players[0].playerId)) { 
-                //pl.createdCharacter.GetComponent<StateManager>().lookRight = false;
+                pl.createdCharacter.GetComponent<StateManager>().lookRight = false;
             }
         }
 

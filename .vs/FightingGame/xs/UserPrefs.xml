@@ -1,11 +1,20 @@
 ﻿<Properties StartupConfiguration="{E14ADAAC-FBC7-2A82-D3BE-CB1D6D8DD9C0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Level/LevelUI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Players/HandleMovement.cs">
     <Files>
       <File FileName="Assets/Scripts/MainMenu/IntroSceneManager.cs" Line="92" Column="69" />
       <File FileName="Assets/Scripts/MainMenu/CharacterManager.cs" Line="35" Column="8" />
       <File FileName="Assets/Scripts/MainMenu/SelectScreenManager.cs" Line="143" Column="15" />
       <File FileName="Assets/Scripts/Level/LevelUI.cs" Line="20" Column="6" />
-      <File FileName="Assets/Scripts/Level/LevelManager.cs" Line="37" Column="17" />
+      <File FileName="Assets/Scripts/Level/LevelManager.cs" Line="268" Column="25" />
+      <File FileName="Assets/Scripts/Players/ChangeBool.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Players/StateManager.cs" Line="111" Column="32" />
+      <File FileName="Assets/Scripts/Players/HandleMovementCollider_ASB.cs" Line="11" Column="4" />
+      <File FileName="Assets/Scripts/Players/OpenDamageCollider.cs" Line="28" Column="41" />
+      <File FileName="Assets/Scripts/Players/HandleDamageColliders.cs" Line="57" Column="71" />
+      <File FileName="Assets/Scripts/Players/HandleAnimations.cs" Line="81" Column="28" />
+      <File FileName="Assets/Scripts/Players/DoDamage.cs" Line="23" Column="56" />
+      <File FileName="Assets/Scripts/Players/InputHandler.cs" Line="33" Column="34" />
+      <File FileName="Assets/Scripts/Players/HandleMovement.cs" Line="6" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

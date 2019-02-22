@@ -35,15 +35,15 @@ public class LevelManager : MonoBehaviour {
 
     void FixedUpdate()
     {
-        /*
-        if (charM.players[0].playerStates.transfirm.position.x < charM.players[1].playerStates.transfiorm.position.x) {
+
+        if (charM.players[0].playerStates.transform.position.x < charM.players[1].playerStates.transform.position.x) {
             charM.players[0].playerStates.lookRight = true;
             charM.players[1].playerStates.lookRight = false;
         }
         else {
             charM.players[0].playerStates.lookRight = false;
             charM.players[1].playerStates.lookRight = true;
-        }*/
+        }
     }
     // Update is called once per frame
     void Update()
@@ -96,8 +96,8 @@ public class LevelManager : MonoBehaviour {
 
             GameObject go = Instantiate(charM.players[i].playerPrefab, spawnPositions[i].position, Quaternion.identity) as GameObject;
 
-            //charM.players[i].playerStates = go.GetComponent<StateManager>();
-            //charM.players[i].playerStates.healthSlider = levelUI.healthSlider[i];
+            charM.players[i].playerStates = go.GetComponent<StateManager>();
+            charM.players[i].playerStates.healthSlider = levelUI.healthSliders[i];
 
         }
         yield return null;
@@ -105,9 +105,9 @@ public class LevelManager : MonoBehaviour {
 
     IEnumerator InitPlayers() {
         for (int i = 0; i < charM.players.Count; i++) {
-            //charM.players[i].playerStates.health = 100;
-            //charM.players[i].playerStates.anim.Play("Locomotion");
-            //charM.players[i].playerStates.position = spawnPositions[i].position;
+            charM.players[i].playerStates.health = 100;
+            charM.players[i].playerStates.handleAnim.anim.Play("Locomotion");
+            charM.players[i].playerStates.transform.position = spawnPositions[i].position;
         }
         yield return null;
     }
@@ -138,9 +138,9 @@ public class LevelManager : MonoBehaviour {
 
         for (int i = 0; i < charM.players.Count; i++) {
             if (charM.players[i].playerType == PlayerBase.PlayerType.user) {
-                //InputHandler ih = charM.players[i].playerStates.gameObject.GetComponent<InputHandler>();    
-                //ih.playerInput = charM.players[i[.inputId;
-                //ih.enabled = true
+                InputHandler ih = charM.players[i].playerStates.gameObject.GetComponent<InputHandler>();    
+                ih.playerInput = charM.players[i].inputId;
+                ih.enabled = true;
             }
         }
 
@@ -154,11 +154,11 @@ public class LevelManager : MonoBehaviour {
     {
         for (int i = 0; i < charM.players.Count; i++)
         {
-            //charM.players[i].playerStates.ResetStateInputs();
+            charM.players[i].playerStates.ResetStateInputs();
 
             if (charM.players[i].playerType == PlayerBase.PlayerType.user)
             {
-                //charM.players[i].playerStates.GetComponent<InputHandler>().enable = false;
+                charM.players[i].playerStates.GetComponent<InputHandler>().enabled = false;
             }
         }
     }
@@ -205,10 +205,10 @@ public class LevelManager : MonoBehaviour {
 
         if (vPlayer != null)
         {
-            /*if (vPlayer.playerStates == 100) {
+            if (vPlayer.playerStates.health == 100) {
                 levelUI.AnnouncerTextLine2.gameObject.SetActive(true);
                 levelUI.AnnouncerTextLine2.text = "Flawless Victoy!";
-            }*/
+            }
         }
 
         yield return oneSec;
@@ -246,8 +246,8 @@ public class LevelManager : MonoBehaviour {
     PlayerBase FindWinningPlayer() {
         PlayerBase retVal = null;
 
-        //StateManager targerPlayer = null;
-        /*
+        StateManager targetPlayer = null;
+
         if(charM.players[0].playerStates.health < charM.players[1].playerStates.health) {
             charM.players[1].score++;
             targetPlayer = charM.players[1].playerStates;
@@ -257,8 +257,18 @@ public class LevelManager : MonoBehaviour {
             targetPlayer = charM.players[0].playerStates;
             levelUI.AddWinIndicator(0);
         }
-         retVal = charM.returnPLayerFromStates(targetPlayer);
-        */
+         retVal = charM.returnPlayerFromStates(targetPlayer);
+
         return retVal;
+    }
+
+    public static LevelManager instance;
+    
+    public static LevelManager GetInstance() {
+        return instance;
+    }
+    void Awake()
+    {
+        instance = this;
     }
 }

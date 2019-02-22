@@ -22,7 +22,7 @@ public class CharacterManager : MonoBehaviour {
         return retVal;
     }
 
-   /* public PlayerBase returnPlayerFromStates(StateManager states) {
+   public PlayerBase returnPlayerFromStates(StateManager states) {
         PlayerBase retVal = null;
 
         for(int i = 0; i < players.Count; i++) { 
@@ -32,7 +32,7 @@ public class CharacterManager : MonoBehaviour {
             }
         }
         return retVal;
-    }*/
+    }
 
     public static CharacterManager instance;
     public static CharacterManager GetInstance() {
@@ -61,7 +61,7 @@ public class PlayerBase {
     public PlayerType playerType;
     public bool hasCharacter;
     public GameObject playerPrefab;
-    //public StateManager playerStates;
+    public StateManager playerStates;
     public int score;   
 
     public enum PlayerType { 

@@ -600,6 +600,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 3d8dca738ab374fd2824a1c2ea8a61ee,
         type: 3}
+    - target: {fileID: 11460908, guid: 21ffc5bcda68d014884b083688537456, type: 2}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ffc5bcda68d014884b083688537456, type: 2}
   m_IsPrefabAsset: 0
@@ -1293,7 +1297,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419268, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: characterId
-      value: Donald Trump
+      value: Vladimir Putin
       objectReference: {fileID: 0}
     - target: {fileID: 11462852, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: m_RaycastTarget
@@ -2036,7 +2040,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419268, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: characterId
-      value: Donald Trump
+      value: Vladimir Putin
       objectReference: {fileID: 0}
     - target: {fileID: 11462852, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: m_RaycastTarget

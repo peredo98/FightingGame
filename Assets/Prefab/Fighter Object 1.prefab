@@ -67,7 +67,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4925177163820758}
   - component: {fileID: 50703180794662884}
-  - component: {fileID: 95479683533904736}
   - component: {fileID: 114983187539788924}
   - component: {fileID: 114001117926658904}
   - component: {fileID: 114520934503411138}
@@ -305,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 1645745502590476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.368, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4846707061847264}
   m_Father: {fileID: 4925177163820758}
@@ -399,7 +398,7 @@ Transform:
   m_GameObject: {fileID: 1380420168200426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.72, y: -3.559, z: -0.2}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4637298070371188}
   - {fileID: 4304437097769962}
@@ -557,24 +556,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.4}
   m_EdgeRadius: 0
---- !u!95 &95479683533904736
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1380420168200426}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7766fe3903d996e4f99cb3f120feedf7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &95524832054237288
 Animator:
   serializedVersion: 3
@@ -584,7 +565,7 @@ Animator:
   m_GameObject: {fileID: 1645745502590476}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7766fe3903d996e4f99cb3f120feedf7, type: 2}
+  m_Controller: {fileID: 22100000, guid: db2380d3a2efc47819280212fc0bfcf6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -607,7 +588,7 @@ MonoBehaviour:
   acceleration: 30
   airAcceleartion: 15
   maxSpeed: 20
-  jumpSpeed: 8
+  jumpSpeed: 4
   jumpDuration: 150
 --- !u!114 &114185645511731612
 MonoBehaviour:
@@ -615,12 +596,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1380420168200426}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0c689106acb42e4be7cc077085cfc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: Vladimir Putin
+  playerInput: 
 --- !u!114 &114194836875322248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -818,7 +799,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300048, guid: 6c86bf41bc6883d488e310c6dc7cc4f3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0

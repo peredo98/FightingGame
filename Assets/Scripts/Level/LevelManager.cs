@@ -202,15 +202,6 @@ public class LevelManager : MonoBehaviour {
         yield return oneSec;
         yield return oneSec;
         yield return oneSec;
-
-        if (vPlayer != null)
-        {
-            if (vPlayer.playerStates.health == 100) {
-                levelUI.AnnouncerTextLine2.gameObject.SetActive(true);
-                levelUI.AnnouncerTextLine2.text = "Flawless Victoy!";
-            }
-        }
-
         yield return oneSec;
         yield return oneSec;
         yield return oneSec;

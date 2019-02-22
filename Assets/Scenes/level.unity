@@ -970,7 +970,7 @@ MonoBehaviour:
   - {fileID: 1247651103}
   maxturns: 2
   countdown: 0
-  maxTurnTimer: 30
+  maxTurnTimer: 99
 --- !u!1 &1295503829
 GameObject:
   m_ObjectHideFlags: 0

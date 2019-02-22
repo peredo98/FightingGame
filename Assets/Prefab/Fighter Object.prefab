@@ -114,7 +114,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4465384780062144}
   - component: {fileID: 50082524453032706}
-  - component: {fileID: 95935395315352694}
   - component: {fileID: 114662123972005038}
   - component: {fileID: 114093643626522394}
   - component: {fileID: 114473310148683226}
@@ -566,25 +565,7 @@ Animator:
   m_GameObject: {fileID: 1264739460645514}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7766fe3903d996e4f99cb3f120feedf7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!95 &95935395315352694
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1313641858025482}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7766fe3903d996e4f99cb3f120feedf7, type: 2}
+  m_Controller: {fileID: 22100000, guid: b28adea2a82de47269fc6aa5860032a8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -619,7 +600,7 @@ MonoBehaviour:
   acceleration: 30
   airAcceleartion: 15
   maxSpeed: 20
-  jumpSpeed: 8
+  jumpSpeed: 4
   jumpDuration: 150
 --- !u!114 &114236780466037536
 MonoBehaviour:
@@ -671,12 +652,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1313641858025482}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0c689106acb42e4be7cc077085cfc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInput: Donald Trump
+  playerInput: 
 --- !u!114 &114662123972005038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -772,7 +753,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3d8dca738ab374fd2824a1c2ea8a61ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a466875864d7d4eceb7e367c455eda9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -818,12 +799,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300048, guid: 6c86bf41bc6883d488e310c6dc7cc4f3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 2
+  m_Size: {x: 2.56, y: 2.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

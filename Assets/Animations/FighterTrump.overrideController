@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FighterTrump
+  m_Controller: {fileID: 9100000, guid: 7766fe3903d996e4f99cb3f120feedf7, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 31e5e0e144defb64e960bb7a6f7335cf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 33115e7d56a744bfb926a8f05ae095d4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e5a212e8449cdc349ab1daf5311a1fc3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5e6b3110db0114715bb23d8ca5888485, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 03ff9693050cc984cacc5c8ae59a6a06, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d63c68a2a7de948f6b8b54210f48ecc9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2ee767bb431ac7e44b3072de586ddcf0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6718bd96d1e174be9b000d1b9da5d1dc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4e68c6ed889e3924786f666fbc9d27cd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 965e8cdeef39d475a8f2997acba0dfee, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 10e173786cd6a294ba747038e566c84d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8c329173b4c19400a8a35c77ee06717d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6b077ba1f48b03443892eae7e2ae9e59, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6133b4eb27b8d4c1f8c2c114d93071e1, type: 2}

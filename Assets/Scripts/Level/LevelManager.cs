@@ -9,6 +9,7 @@ public class LevelManager : MonoBehaviour {
     WaitForSeconds oneSec;
     public Transform[] spawnPositions;
 
+    CameraManager camM;
     CharacterManager charM;
     LevelUI levelUI;
 
@@ -24,6 +25,7 @@ public class LevelManager : MonoBehaviour {
     void Start() {
         charM = CharacterManager.GetInstance();
         levelUI = LevelUI.GetInstance();
+        camM = CameraManager.GetInstance();
 
         oneSec = new WaitForSeconds(1);
 
@@ -98,6 +100,7 @@ public class LevelManager : MonoBehaviour {
 
             charM.players[i].playerStates = go.GetComponent<StateManager>();
             charM.players[i].playerStates.healthSlider = levelUI.healthSliders[i];
+            camM.players.Add(go.transform);
 
         }
         yield return null;

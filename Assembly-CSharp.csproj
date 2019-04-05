@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Level\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Level\LevelUI.cs" />
     <Compile Include="Assets\Scripts\MainMenu\ButtonRef.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\CameraManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu\IntroSceneManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu\PotraitInfo.cs" />

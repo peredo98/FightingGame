@@ -9,6 +9,8 @@ public class LevelManager : MonoBehaviour {
     WaitForSeconds oneSec;
     public Transform[] spawnPositions;
 
+    public GameObject sprite;
+
     CameraManager camM;
     CharacterManager charM;
     LevelUI levelUI;
@@ -23,9 +25,13 @@ public class LevelManager : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+
+
         charM = CharacterManager.GetInstance();
         levelUI = LevelUI.GetInstance();
         camM = CameraManager.GetInstance();
+
+        sprite.GetComponent<SpriteRenderer>().sprite = charM.selectedSprite;
 
         oneSec = new WaitForSeconds(1);
 
@@ -74,6 +80,7 @@ public class LevelManager : MonoBehaviour {
 
 
     IEnumerator StartGame() {
+
         yield return CreatePlayers();
 
         yield return InitTurn();

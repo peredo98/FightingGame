@@ -8,7 +8,7 @@ public class CameraManager : MonoBehaviour {
     public Transform cameraHolder;
 
     public List<Transform> players = new List<Transform>();
-
+    bool loadLevel;
 
     Transform p1;
     Transform p2;

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour {
 
+
+    public Sprite selectedSprite;
+
     public int numberOfUsers;
     public List<PlayerBase> players = new List<PlayerBase>();
 

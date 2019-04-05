@@ -160,7 +160,7 @@ public class SelectScreenManager : MonoBehaviour {
             }
         }
         yield return new WaitForSeconds(2);
-        SceneManager.LoadSceneAsync("level", LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync("stage", LoadSceneMode.Single);
     }
 
     void HandleSelectorPosition(PlayerInterfaces pl) {

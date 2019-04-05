@@ -142,6 +142,14 @@ public class LevelManager : MonoBehaviour {
                 ih.playerInput = charM.players[i].inputId;
                 ih.enabled = true;
             }
+
+            if (charM.players[i].playerType == PlayerBase.PlayerType.ai)
+            {
+                AICharacter ai = charM.players[i].playerStates.gameObject.GetComponent<AICharacter>();
+                ai.enabled = true;
+
+                ai.enStates = charM.returnOppositePlayer(charM.players[i]).playerStates;
+            }
         }
 
         yield return oneSec;

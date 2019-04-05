@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\MainMenu\IntroSceneManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu\PotraitInfo.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SelectScreenManager.cs" />
+    <Compile Include="Assets\Scripts\Players\AICharacter.cs" />
     <Compile Include="Assets\Scripts\Players\ChangeBool.cs" />
     <Compile Include="Assets\Scripts\Players\DoDamage.cs" />
     <Compile Include="Assets\Scripts\Players\HandleAnimations.cs" />

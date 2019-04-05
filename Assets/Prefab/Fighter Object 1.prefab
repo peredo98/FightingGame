@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 114520934503411138}
   - component: {fileID: 114194836875322248}
   - component: {fileID: 114185645511731612}
+  - component: {fileID: 114645323266234978}
   m_Layer: 8
   m_Name: Fighter Object 1
   m_TagString: Untagged
@@ -663,6 +664,40 @@ MonoBehaviour:
   - attack: 0
     attackTimer: 0
     timesPressed: 0
+--- !u!114 &114645323266234978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1380420168200426}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48bb2a7bf84c44b190f2aa6ae32a0ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enStates: {fileID: 0}
+  changeStateTolerance: 3
+  normalRate: 1
+  closeRate: 0.5
+  blockingRate: 1.5
+  aiStateLife: 1
+  JumpRate: 1
+  attackPatterns:
+  - attacks:
+    - attack1: 1
+      attack2: 0
+      delay: 0
+    - attack1: 0
+      attack2: 1
+      delay: 0
+  - attacks:
+    - attack1: 1
+      attack2: 0
+      delay: 0
+    - attack1: 1
+      attack2: 0
+      delay: 0
+  aiState: 0
 --- !u!114 &114653411875569344
 MonoBehaviour:
   m_ObjectHideFlags: 1

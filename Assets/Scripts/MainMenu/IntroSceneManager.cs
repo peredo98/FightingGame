@@ -28,7 +28,7 @@ public class IntroSceneManager : MonoBehaviour {
                 startText.SetActive(!startText.activeInHierarchy);
             }
 
-            if(Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Jump")) {
+            if(Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Jump") || Input.GetButtonUp("Submit")) {
                 init = true;
                 startText.SetActive(false);
                 menuObj.SetActive(true);
@@ -40,7 +40,7 @@ public class IntroSceneManager : MonoBehaviour {
             {
                 menuOptions[activeElement].selected = true;
 
-                if (Input.GetKeyUp(KeyCode.UpArrow)) {
+                if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetAxis("Vertical") > 0.6) {
                     menuOptions[activeElement].selected = false;
 
                     if (activeElement > 0) {
@@ -50,7 +50,8 @@ public class IntroSceneManager : MonoBehaviour {
                         activeElement = menuOptions.Length - 1;
                     }
                 }
-                if (Input.GetKeyUp(KeyCode.DownArrow)) {
+                if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetAxis("Vertical") < -0.6)
+                {
                     menuOptions[activeElement].selected = false;
 
                     if(activeElement < menuOptions.Length - 1) {
@@ -60,7 +61,8 @@ public class IntroSceneManager : MonoBehaviour {
                         activeElement = 0;
                     }
                 }
-                if(Input.GetKeyUp(KeyCode.Space) || Input.GetButton("Jump")) {
+                if(Input.GetKeyUp(KeyCode.Space) || Input.GetButtonUp("Jump") || Input.GetButtonUp("Submit"))
+                {
                     Debug.Log("Load");
                     loadingLevel = true;
                     StartCoroutine("LoadLevel");

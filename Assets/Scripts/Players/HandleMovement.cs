@@ -47,7 +47,7 @@ public class HandleMovement : MonoBehaviour {
     }
 
     void Jump() { 
-        if(states.vertical > 0)
+        if(states.vertical > 0 || states.jump)
         {
             if (!justJumped) {
                 justJumped = true;

@@ -9,6 +9,7 @@ public class StateManager : MonoBehaviour {
 
     public float horizontal;
     public float vertical;
+    public bool jump;
 
     public bool attack1;
     public bool attack2;
@@ -79,6 +80,7 @@ public class StateManager : MonoBehaviour {
     public void ResetStateInputs() {
         horizontal = 0;
         vertical = 0;
+        jump = false;
         attack1 = false;
         attack2 = false;
         attack3 = false;

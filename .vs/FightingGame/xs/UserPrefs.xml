@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{E14ADAAC-FBC7-2A82-D3BE-CB1D6D8DD9C0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu/StageManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sprites/Putin/jump/NewBehaviourScript.cs">
     <Files>
       <File FileName="Assets/Scripts/MainMenu/IntroSceneManager.cs" Line="92" Column="69" />
-      <File FileName="Assets/Scripts/MainMenu/CharacterManager.cs" Line="9" Column="5" />
+      <File FileName="Assets/Scripts/MainMenu/CharacterManager.cs" Line="9" Column="1" />
       <File FileName="Assets/Scripts/Level/LevelUI.cs" Line="20" Column="6" />
       <File FileName="Assets/Scripts/Level/LevelManager.cs" Line="183" Column="85" />
       <File FileName="Assets/Scripts/Players/ChangeBool.cs" Line="32" Column="1" />
-      <File FileName="Assets/Scripts/Players/StateManager.cs" Line="113" Column="13" />
+      <File FileName="Assets/Scripts/Players/StateManager.cs" Line="113" Column="1" />
       <File FileName="Assets/Scripts/Players/HandleMovementCollider_ASB.cs" Line="11" Column="4" />
       <File FileName="Assets/Scripts/Players/OpenDamageCollider.cs" Line="10" Column="40" />
       <File FileName="Assets/Scripts/Players/HandleDamageColliders.cs" Line="57" Column="57" />
@@ -19,6 +19,7 @@
       <File FileName="Assets/Scripts/MainMenu/CameraManager.cs" Line="11" Column="20" />
       <File FileName="Assets/Scripts/MainMenu/SelectScreenManager.cs" Line="34" Column="53" />
       <File FileName="Assets/Scripts/MainMenu/StageManager.cs" Line="149" Column="41" />
+      <File FileName="Assets/Sprites/Putin/jump/NewBehaviourScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

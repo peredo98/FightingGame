@@ -24,10 +24,10 @@ public class InputHandler : MonoBehaviour {
     {
         horizontal = Input.GetAxis("Horizontal" + playerInput);
         vertical = Input.GetAxis("Vertical" + playerInput);
-        attack1 = Input.GetButton("Fire1" + playerInput);
-        attack2 = Input.GetButton("Fire2" + playerInput);
-        attack3 = Input.GetButton("Fire3" + playerInput);
-        jump = Input.GetButton("Jump" + playerInput);
+        attack1 = Input.GetButtonDown("Fire1" + playerInput);
+        attack2 = Input.GetButtonDown("Fire2" + playerInput);
+        attack3 = Input.GetButtonDown("Fire3" + playerInput);
+        jump = Input.GetButtonDown("Jump" + playerInput);
 
         states.horizontal = horizontal;
         states.vertical = vertical;

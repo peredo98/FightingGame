@@ -20,7 +20,7 @@ public class DoDamage : MonoBehaviour {
             if(oState != states) {
 
                 if (!oState.currenlyAttackig) {
-                    oState.TakeDamage(30, DamageType); 
+                    oState.TakeDamage(10, DamageType); 
                 }
 
             }

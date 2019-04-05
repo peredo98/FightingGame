@@ -283,8 +283,18 @@ public class AICharacter : MonoBehaviour {
         }
     }
 
-    void Jumping() { 
-        if(!enStates.onGround || jump) {
+    void Jumping() {
+        if (!enStates.onGround)
+        {
+            float ranValue = ReturnRandom();
+
+            if(ranValue < 20) {
+                jump = true;
+            }
+
+
+        }
+        if (jump) {
             states.vertical = 1;
             jump = false;
 

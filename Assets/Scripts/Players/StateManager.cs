@@ -102,13 +102,15 @@ public class StateManager : MonoBehaviour {
             switch (damageType) {
                 case HandleDamageColliders.DamageType.light:
                     StartCoroutine(CloseImmortality(0.3f));
+                    health -= (int)(damage * 0.8);
                     break;
                 case HandleDamageColliders.DamageType.heavy:
                     handleMovement.AddVelocityOnCharacter(((!lookRight) ? Vector3.right * 1 : Vector3.right * -1) + Vector3.up , 0.5f);
                     StartCoroutine(CloseImmortality(1));
+                    health -= damage;
                     break; 
             }
-            health -= damage;
+
             gettingHit = true; 
         }
     }

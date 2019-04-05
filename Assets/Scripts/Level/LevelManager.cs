@@ -178,6 +178,10 @@ public class LevelManager : MonoBehaviour {
             {
                 charM.players[i].playerStates.GetComponent<InputHandler>().enabled = false;
             }
+            if (charM.players[i].playerType == PlayerBase.PlayerType.ai)
+            {
+                charM.players[i].playerStates.GetComponent<AICharacter>().enabled = false;
+            }
         }
     }
 

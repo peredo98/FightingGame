@@ -1154,7 +1154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419268, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: characterId
-      value: Donald Trump
+      value: Merkel
       objectReference: {fileID: 0}
     - target: {fileID: 11462852, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: m_RaycastTarget
@@ -1184,6 +1184,11 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11460908, guid: 21ffc5bcda68d014884b083688537456, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6780e5dd7207649a3ab66c6f10be82e7,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ffc5bcda68d014884b083688537456, type: 2}
   m_IsPrefabAsset: 0
@@ -1297,7 +1302,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419268, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: characterId
-      value: Vladimir Putin
+      value: Elizabeth
       objectReference: {fileID: 0}
     - target: {fileID: 11462852, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: m_RaycastTarget
@@ -1327,6 +1332,11 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11460908, guid: 21ffc5bcda68d014884b083688537456, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 06630984599ce4b5fb38e83ca3f49f11,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ffc5bcda68d014884b083688537456, type: 2}
   m_IsPrefabAsset: 0
@@ -1501,7 +1511,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419268, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: characterId
-      value: Donald Trump
+      value: Kim
       objectReference: {fileID: 0}
     - target: {fileID: 11462852, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: m_RaycastTarget
@@ -1535,6 +1545,11 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11460908, guid: 21ffc5bcda68d014884b083688537456, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a2d69c10b64084f9b9fdaa536017b01c,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ffc5bcda68d014884b083688537456, type: 2}
   m_IsPrefabAsset: 0
@@ -1859,7 +1874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419268, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: characterId
-      value: Donald Trump
+      value: Maduro
       objectReference: {fileID: 0}
     - target: {fileID: 11462852, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: m_RaycastTarget
@@ -1893,6 +1908,11 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11460908, guid: 21ffc5bcda68d014884b083688537456, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8edc3f5a65af141ffa09dc0b883666a1,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ffc5bcda68d014884b083688537456, type: 2}
   m_IsPrefabAsset: 0
@@ -2040,7 +2060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419268, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: characterId
-      value: Vladimir Putin
+      value: Xi
       objectReference: {fileID: 0}
     - target: {fileID: 11462852, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: m_RaycastTarget
@@ -2070,6 +2090,11 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11460908, guid: 21ffc5bcda68d014884b083688537456, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e01192c3d25f0413d9d17521d294b841,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ffc5bcda68d014884b083688537456, type: 2}
   m_IsPrefabAsset: 0
@@ -2379,7 +2404,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419268, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: characterId
-      value: Donald Trump
+      value: AMLO
       objectReference: {fileID: 0}
     - target: {fileID: 11462852, guid: 21ffc5bcda68d014884b083688537456, type: 2}
       propertyPath: m_RaycastTarget
@@ -2409,6 +2434,11 @@ Prefab:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11460908, guid: 21ffc5bcda68d014884b083688537456, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8c8d18524ac5d4e729d8f6472570fbe9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21ffc5bcda68d014884b083688537456, type: 2}
   m_IsPrefabAsset: 0

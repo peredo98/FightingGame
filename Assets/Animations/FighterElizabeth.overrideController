@@ -4,7 +4,28 @@
 AnimatorOverrideController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: FighterElizabeth
   m_Controller: {fileID: 9100000, guid: 7766fe3903d996e4f99cb3f120feedf7, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d07906f95a133cc4dba04cd126d2a99c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e34b4aa1ac3514bcab7f41d069a88c32, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e6ab50ce58e14284786e05c82f2a9fc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6fe07740f3dc440ceaaaa861b6e9b0e3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 31e5e0e144defb64e960bb7a6f7335cf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bad84a0483be94e85b3fc4645a148735, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6b077ba1f48b03443892eae7e2ae9e59, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b0c3bac68dccf444d85063b56625bdca, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4e68c6ed889e3924786f666fbc9d27cd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 41f3e62f00af74eb787972db4f3bcec9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2ee767bb431ac7e44b3072de586ddcf0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a487b49e509d34b61a6afcc54dce6ed7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 10e173786cd6a294ba747038e566c84d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4576c18e9713e4093881630a35a3291e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 03ff9693050cc984cacc5c8ae59a6a06, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 329db7c259cc44aba87e0ec5fdf3f7fe, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 15fc0e9dba2564f4f8134c67dc83f58f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: aede356db96024c3bb4472f130d8f0a7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e5a212e8449cdc349ab1daf5311a1fc3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1696b18c1e9864dec830e8d94f90d467, type: 2}

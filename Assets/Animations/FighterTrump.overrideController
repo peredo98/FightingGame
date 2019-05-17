@@ -4,7 +4,8 @@
 AnimatorOverrideController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: FighterTrump
   m_Controller: {fileID: 9100000, guid: 7766fe3903d996e4f99cb3f120feedf7, type: 2}
   m_Clips:
@@ -22,3 +23,9 @@ AnimatorOverrideController:
     m_OverrideClip: {fileID: 7400000, guid: 8c329173b4c19400a8a35c77ee06717d, type: 2}
   - m_OriginalClip: {fileID: 7400000, guid: 6b077ba1f48b03443892eae7e2ae9e59, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 6133b4eb27b8d4c1f8c2c114d93071e1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e6ab50ce58e14284786e05c82f2a9fc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 15d5d69eb48a54ecda9b8f5995eb317c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d07906f95a133cc4dba04cd126d2a99c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b37adde581f40460ca3f50d1e4256904, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 15fc0e9dba2564f4f8134c67dc83f58f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 119ee0c1fcad5491f9f6fe00d9956b8d, type: 2}

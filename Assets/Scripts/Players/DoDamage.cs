@@ -19,7 +19,7 @@ public class DoDamage : MonoBehaviour {
 
             if(oState != states) {
 
-                if (!oState.currenlyAttackig) {
+                if (!oState.currenlyAttackig && !oState.crouch) {
                     oState.TakeDamage(10, DamageType); 
                 }
 

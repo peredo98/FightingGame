@@ -468,7 +468,7 @@ PrefabInstance:
     - target: {fileID: 114381257376950916, guid: cd7178b38f9baf047b66ccbf8a509bd2,
         type: 3}
       propertyPath: characterList.Array.size
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114381257376950916, guid: cd7178b38f9baf047b66ccbf8a509bd2,
         type: 3}
@@ -516,13 +516,13 @@ PrefabInstance:
     - target: {fileID: 114381257376950916, guid: cd7178b38f9baf047b66ccbf8a509bd2,
         type: 3}
       propertyPath: characterList.Array.data[3].charId
-      value: Xi
+      value: Maduro
       objectReference: {fileID: 0}
     - target: {fileID: 114381257376950916, guid: cd7178b38f9baf047b66ccbf8a509bd2,
         type: 3}
       propertyPath: characterList.Array.data[3].prefab
       value: 
-      objectReference: {fileID: 1860610046014594, guid: 0383d8b7f6d07479581a62f230bce079,
+      objectReference: {fileID: 1207701623817344, guid: aff7a972e213946bb8f3bf48f8c64e71,
         type: 3}
     - target: {fileID: 114381257376950916, guid: cd7178b38f9baf047b66ccbf8a509bd2,
         type: 3}
@@ -538,13 +538,13 @@ PrefabInstance:
     - target: {fileID: 114381257376950916, guid: cd7178b38f9baf047b66ccbf8a509bd2,
         type: 3}
       propertyPath: characterList.Array.data[5].charId
-      value: Merkel
+      value: Kim
       objectReference: {fileID: 0}
     - target: {fileID: 114381257376950916, guid: cd7178b38f9baf047b66ccbf8a509bd2,
         type: 3}
       propertyPath: characterList.Array.data[5].prefab
       value: 
-      objectReference: {fileID: 1555816566083018, guid: 083e913ab94e64e6eb5403fee7cff9f6,
+      objectReference: {fileID: 1382050195413502, guid: 9980e1196f37d4da69b649deedee14b1,
         type: 3}
     - target: {fileID: 114381257376950916, guid: cd7178b38f9baf047b66ccbf8a509bd2,
         type: 3}

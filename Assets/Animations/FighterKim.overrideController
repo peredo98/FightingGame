@@ -4,7 +4,28 @@
 AnimatorOverrideController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: FighterKim
   m_Controller: {fileID: 9100000, guid: 7766fe3903d996e4f99cb3f120feedf7, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d07906f95a133cc4dba04cd126d2a99c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c8a9b40419546491eae647f85330137b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e6ab50ce58e14284786e05c82f2a9fc1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 68ed844459a2b40fc8a8a60c32469f4a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 31e5e0e144defb64e960bb7a6f7335cf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c67473fa1917a4693b56b14e4c73a714, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6b077ba1f48b03443892eae7e2ae9e59, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fd461a46c7558431ba8655fbe0738adc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4e68c6ed889e3924786f666fbc9d27cd, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 09b4a5b06b017408cb17d17a9f9389dc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 10e173786cd6a294ba747038e566c84d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5d277459ba1e843f08667498a9eeb5fa, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 2ee767bb431ac7e44b3072de586ddcf0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3f15aab5b0e7b4d00849c41c99471522, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 03ff9693050cc984cacc5c8ae59a6a06, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fb0852c855a7a464196b88e74ccb48ed, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 15fc0e9dba2564f4f8134c67dc83f58f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 444e05c6ac1ee4d76bcf26e2e75bb16a, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e5a212e8449cdc349ab1daf5311a1fc3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0ba404c4b1f5449e5a8e5df188227b3f, type: 2}

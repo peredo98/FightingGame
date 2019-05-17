@@ -110,7 +110,12 @@ public class StateManager : MonoBehaviour {
                     handleMovement.AddVelocityOnCharacter(((!lookRight) ? Vector3.right * 1 : Vector3.right * -1) + Vector3.up , 0.5f);
                     StartCoroutine(CloseImmortality(1));
                     health -= damage;
-                    break; 
+                    break;
+                case HandleDamageColliders.DamageType.special:
+                    handleMovement.AddVelocityOnCharacter(((!lookRight) ? Vector3.right * 1 : Vector3.right * -1) + Vector3.up, 0.5f);
+                    StartCoroutine(CloseImmortality(1));
+                    health -= (int)(damage * 3);
+                    break;
             }
 
             gettingHit = true; 

@@ -10,7 +10,8 @@ public class HandleDamageColliders : MonoBehaviour {
 
     public enum DamageType { 
         light,
-        heavy
+        heavy,
+        special
     }
 
     public enum DCtype

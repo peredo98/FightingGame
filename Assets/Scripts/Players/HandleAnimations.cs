@@ -8,7 +8,7 @@ public class HandleAnimations : MonoBehaviour {
     StateManager states;
 
     public float attackRate = .3f;
-    public AttacksBase[] attacks = new AttacksBase[2];
+    public AttacksBase[] attacks = new AttacksBase[3];
 	// Use this for initialization
 	void Start () {
         states = GetComponent<StateManager>();
@@ -75,10 +75,30 @@ public class HandleAnimations : MonoBehaviour {
 
                 }
             }
+            if (states.attack3)
+            {
+                attacks[2].attack = true;
+                attacks[2].attackTimer = 0;
+                attacks[2].timesPressed++;
+            }
+            if (attacks[2].attack)
+
+            {
+                attacks[2].attackTimer += Time.deltaTime;
+
+                if (attacks[2].attackTimer > attackRate || attacks[0].timesPressed >= 3)
+                {
+                    attacks[2].attackTimer = 0;
+                    attacks[2].attack = false;
+                    attacks[2].timesPressed = 0;
+
+                }
+            }
         }
 
         anim.SetBool("Attack1", attacks[0].attack);
         anim.SetBool("Attack2", attacks[1].attack);
+        anim.SetBool("Attack3", attacks[2].attack);
 
     }
 

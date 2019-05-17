@@ -1,24 +1,24 @@
 ﻿<Properties StartupConfiguration="{E14ADAAC-FBC7-2A82-D3BE-CB1D6D8DD9C0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu/SelectScreenManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu/CharacterManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/MainMenu/IntroSceneManager.cs" Line="92" Column="69" />
+      <File FileName="Assets/Scripts/MainMenu/IntroSceneManager.cs" Line="31" Column="95" />
       <File FileName="Assets/Scripts/MainMenu/CharacterManager.cs" Line="9" Column="1" />
       <File FileName="Assets/Scripts/Level/LevelUI.cs" Line="20" Column="6" />
       <File FileName="Assets/Scripts/Level/LevelManager.cs" Line="183" Column="85" />
       <File FileName="Assets/Scripts/Players/ChangeBool.cs" Line="32" Column="1" />
-      <File FileName="Assets/Scripts/Players/StateManager.cs" Line="113" Column="1" />
       <File FileName="Assets/Scripts/Players/HandleMovementCollider_ASB.cs" Line="11" Column="4" />
       <File FileName="Assets/Scripts/Players/OpenDamageCollider.cs" Line="10" Column="40" />
       <File FileName="Assets/Scripts/Players/HandleDamageColliders.cs" Line="57" Column="57" />
-      <File FileName="Assets/Scripts/Players/HandleAnimations.cs" Line="99" Column="1" />
+      <File FileName="Assets/Scripts/Players/HandleAnimations.cs" Line="87" Column="27" />
       <File FileName="Assets/Scripts/Players/DoDamage.cs" Line="23" Column="41" />
-      <File FileName="Assets/Scripts/Players/InputHandler.cs" Line="29" Column="40" />
-      <File FileName="Assets/Scripts/Players/HandleMovement.cs" Line="33" Column="17" />
+      <File FileName="Assets/Scripts/Players/StateManager.cs" Line="111" Column="22" />
+      <File FileName="Assets/Scripts/Players/InputHandler.cs" Line="30" Column="35" />
+      <File FileName="Assets/Scripts/Players/HandleMovement.cs" Line="46" Column="10" />
       <File FileName="Assets/Scripts/Utilities/LightFlicker.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Players/AICharacter.cs" Line="291" Column="29" />
       <File FileName="Assets/Scripts/MainMenu/CameraManager.cs" Line="11" Column="20" />
-      <File FileName="Assets/Scripts/MainMenu/SelectScreenManager.cs" Line="34" Column="53" />
-      <File FileName="Assets/Scripts/MainMenu/StageManager.cs" Line="149" Column="41" />
+      <File FileName="Assets/Scripts/MainMenu/SelectScreenManager.cs" Line="94" Column="62" />
+      <File FileName="Assets/Scripts/MainMenu/StageManager.cs" Line="149" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

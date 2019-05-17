@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class StateManager : MonoBehaviour {
 
     public int health = 100;
+    public int power = 0;
 
     public float horizontal;
     public float vertical;
@@ -26,6 +27,7 @@ public class StateManager : MonoBehaviour {
     public bool lookRight;
 
     public Slider healthSlider;
+    public Slider powerSlider;
     SpriteRenderer sRenderer;
 
     public HandleDamageColliders handleDC;
@@ -54,7 +56,11 @@ public class StateManager : MonoBehaviour {
         if (healthSlider != null) {
             healthSlider.value = health * 0.01f;
         }
-        if(health <= 0)
+        if (powerSlider!= null)
+        {
+            powerSlider.value = power * 0.01f;
+        }
+        if (health <= 0)
         {
             if (LevelManager.GetInstance().countdown) {
                 LevelManager.GetInstance().EndTurnFunction();
@@ -109,16 +115,22 @@ public class StateManager : MonoBehaviour {
                 case HandleDamageColliders.DamageType.heavy:
                     handleMovement.AddVelocityOnCharacter(((!lookRight) ? Vector3.right * 1 : Vector3.right * -1) + Vector3.up , 0.5f);
                     StartCoroutine(CloseImmortality(1));
-                    health -= damage;
+                    health -= (int)(damage * 1.2);
                     break;
                 case HandleDamageColliders.DamageType.special:
                     handleMovement.AddVelocityOnCharacter(((!lookRight) ? Vector3.right * 1 : Vector3.right * -1) + Vector3.up, 0.5f);
                     StartCoroutine(CloseImmortality(1));
-                    health -= (int)(damage * 3);
+                    health -= (int)(damage * 4);
                     break;
             }
 
             gettingHit = true; 
+        }
+    }
+
+    public void getPower() { 
+        if(power < 100) {
+            power += 10;
         }
     }
 

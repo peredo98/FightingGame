@@ -107,6 +107,7 @@ public class LevelManager : MonoBehaviour {
 
             charM.players[i].playerStates = go.GetComponent<StateManager>();
             charM.players[i].playerStates.healthSlider = levelUI.healthSliders[i];
+            charM.players[i].playerStates.powerSlider = levelUI.powerSliders[i];
             camM.players.Add(go.transform);
 
         }

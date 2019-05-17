@@ -20,6 +20,7 @@ public class DoDamage : MonoBehaviour {
             if(oState != states) {
 
                 if (!oState.currenlyAttackig && !oState.crouch) {
+                    states.getPower();
                     oState.TakeDamage(10, DamageType); 
                 }
 

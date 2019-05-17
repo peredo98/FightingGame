@@ -75,8 +75,9 @@ public class HandleAnimations : MonoBehaviour {
 
                 }
             }
-            if (states.attack3)
+            if (states.attack3 && states.power >= 100)
             {
+                states.power = 0;
                 attacks[2].attack = true;
                 attacks[2].attackTimer = 0;
                 attacks[2].timesPressed++;

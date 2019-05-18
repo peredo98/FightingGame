@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 759
-  m_MinSize: {x: 704, y: 348}
-  m_MaxSize: {x: 12004, y: 8048}
+  m_MinSize: {x: 706, y: 348}
+  m_MaxSize: {x: 12006, y: 8048}
   vertical: 0
-  controlID: 71808
+  controlID: 75184
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 348}
   m_MaxSize: {x: 8004, y: 8048}
   vertical: 1
-  controlID: 71809
+  controlID: 75185
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 71810
+  controlID: 75186
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -212,7 +212,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f298fbfffe98fbff10a2fbff3ca2fbfffaa2fbffb4a3fbff42a4fbff92befbff32c5fbff5ec5fbff8ac5fbffb6c5fbffb8c5fbff06d0fbff12d1fbffd2dafeff6cdcfeffe6e9fefffce9feff12eafeff28eafeff3eeafeff54eafeff6aeafeff80eafeff82eafeff5e6dffff826dffff327dffff767dffff96e0ffff72eefffff4fffffff6a9000032aa00005ab10000661c0200a21c020044200200802002005a2a0200c42a0200c82a0200fc2a0200102b0200
+      m_ExpandedIDs: 847ffaff967ffaff8881faffb281faff4282faff4682fafff298fbfffe98fbff10a2fbff3ca2fbfffaa2fbffb4a3fbff42a4fbff92befbff32c5fbff5ec5fbff8ac5fbffb6c5fbffb8c5fbff06d0fbff12d1fbffd2dafeff6cdcfeffe6e9fefffce9feff12eafeff28eafeff3eeafeff54eafeff6aeafeff80eafeff82eafeff5e6dffff826dffff327dffff767dffff96e0ffff72eefffff4fffffff6a9000032aa00005ab10000661c0200a21c020044200200802002005a2a0200c42a0200c82a0200fc2a0200102b0200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -677,8 +677,8 @@ MonoBehaviour:
     y: 0
     width: 587
     height: 759
-  m_MinSize: {x: 300, y: 300}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 302, y: 324}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 15}
@@ -779,6 +779,6 @@ MonoBehaviour:
     height: 739
   m_PersistentViewDataDictionary: {fileID: 0}
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 5465.955}
+  m_PosRight: {x: 0, y: 1802.0122}
   m_Scope: 1
   m_SplitterFlex: 0.2

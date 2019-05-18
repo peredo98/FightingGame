@@ -93,7 +93,7 @@ public class StageManager : MonoBehaviour {
             }
         }
 
-        if (Input.GetButtonUp("Fire1" + playerId))
+        if (Input.GetButtonUp("Fire1" + playerId) || Input.GetButtonUp("Jump" + playerId))
         {
             //pl.createdCharacter.GetComponent<Animator>().Play("Kick");
             //pl.playerBase.playerPrefab = charMnager.returnCharacterWithID(pl.activePotrait.characterId).prefab;
@@ -146,7 +146,7 @@ public class StageManager : MonoBehaviour {
     {
         if (!loadLevel)
         {
-            if (Input.GetButtonUp("Fire1"))
+            if (Input.GetButtonUp("Fire1") || Input.GetButtonUp("Jump"))
             {
                 //potraitPrefabs[ranValue].characterId;
                 charMnager.selectedSprite = Resources.Load<Sprite>(plInterfaces[0].activePotrait.characterId);

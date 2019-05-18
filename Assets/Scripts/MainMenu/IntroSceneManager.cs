@@ -40,7 +40,7 @@ public class IntroSceneManager : MonoBehaviour {
             {
                 menuOptions[activeElement].selected = true;
 
-                if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetAxis("Vertical") > 0.6) {
+                if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W) || Input.GetAxis("Vertical") > 0) {
                     menuOptions[activeElement].selected = false;
 
                     if (activeElement > 0) {
@@ -50,7 +50,7 @@ public class IntroSceneManager : MonoBehaviour {
                         activeElement = menuOptions.Length - 1;
                     }
                 }
-                if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetAxis("Vertical") < -0.6)
+                else if (Input.GetKeyUp(KeyCode.DownArrow)|| Input.GetKeyUp(KeyCode.S) || Input.GetAxis("Vertical") < 0)
                 {
                     menuOptions[activeElement].selected = false;
 

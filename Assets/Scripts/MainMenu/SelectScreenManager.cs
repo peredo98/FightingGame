@@ -63,7 +63,7 @@ public class SelectScreenManager : MonoBehaviour {
             for(int i = 0; i < plInterfaces.Count; i++) { 
                 if(i < numberOfPlayers)
                 {
-                    if(Input.GetButtonUp("Fire2" + charMnager.players[i].inputId)) {
+                    if(Input.GetButtonUp("Fire3" + charMnager.players[i].inputId)) {
                         plInterfaces[i].playerBase.hasCharacter = false; 
                     }
                     if (!charMnager.players[i].hasCharacter) {
@@ -139,7 +139,7 @@ public class SelectScreenManager : MonoBehaviour {
             }
         }
 
-        if(Input.GetButtonUp("Jump" + playerId)) {
+        if(Input.GetButtonUp("Fire1" + playerId)) {
             //pl.createdCharacter.GetComponent<Animator>().Play("Kick");
             pl.playerBase.playerPrefab = charMnager.returnCharacterWithID(pl.activePotrait.characterId).prefab;
             pl.playerBase.hasCharacter = true;

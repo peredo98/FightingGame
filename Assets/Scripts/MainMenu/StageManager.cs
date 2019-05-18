@@ -146,7 +146,7 @@ public class StageManager : MonoBehaviour {
     {
         if (!loadLevel)
         {
-            if (Input.GetButtonUp("Jump"))
+            if (Input.GetButtonUp("Fire1"))
             {
                 //potraitPrefabs[ranValue].characterId;
                 charMnager.selectedSprite = Resources.Load<Sprite>(plInterfaces[0].activePotrait.characterId);
